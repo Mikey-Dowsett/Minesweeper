@@ -98,7 +98,7 @@ public class Block : MonoBehaviour
             if(!b.isBomb && !b.selected){
                 b.Selection();
             }
-            yield return new WaitForSeconds(0.025f);
+            yield return new WaitForSeconds(0.04f);
         }
     }
 

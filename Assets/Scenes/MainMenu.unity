@@ -1689,7 +1689,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.05
+          m_FloatArgument: 0.075
           m_StringArgument: 11x11
           m_BoolArgument: 0
         m_CallState: 2
@@ -9083,7 +9083,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -12919,7 +12919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: {x: 9, y: 9}
-  bombPercentage: 0.05
+  bombPercentage: 0.075
   maths: +
   grid:
   - {fileID: 1540033283}

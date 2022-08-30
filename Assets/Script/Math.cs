@@ -25,7 +25,7 @@ public class Math : MonoBehaviour
     private void Awake(){
         if(FindObjectOfType<GridSettings>()) {sets = FindObjectOfType<GridSettings>(); oper = sets.maths;}
 
-        if(sets.bombPercentage == 0.05f){
+        if(sets.bombPercentage == 0.075f){
             if(sets.maths == "*"){
                 maxNum = 10;
             } else maxNum = 20;
@@ -72,7 +72,8 @@ public class Math : MonoBehaviour
             if(time <= 0){
                 FindObjectOfType<Generator>().lost = true;
                 countDown = false;
-                ui.SetActive(false);
+                //ui.SetActive(false);
+                answerText.text = answer.ToString();
                 FindObjectOfType<Generator>().tilesLeft = 0;
             }
 
