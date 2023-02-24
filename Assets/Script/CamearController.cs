@@ -23,7 +23,8 @@ public class CamearController : MonoBehaviour
         cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, 1f, max);
         box.size = new Vector2(cam.orthographicSize*2, cam.orthographicSize*2);
 
-        transform.position += new Vector3(Input.GetAxis("Horizontal")*Time.deltaTime*4, Input.GetAxis("Vertical")*Time.deltaTime*4);
+        transform.position += new Vector3(Input.GetAxis("Horizontal")*Time.deltaTime*4, 
+        Input.GetAxis("Vertical")*Time.deltaTime*4);
 
         if(Input.GetKeyDown(KeyCode.Space)){
             ResetCam();
